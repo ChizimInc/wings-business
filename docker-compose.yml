@@ -1,0 +1,21 @@
+version: '3.4'
+
+services:
+  frontend:
+    build: 
+      dockerfile: ./docker/frontend/Dockerfile
+      context: ./
+
+
+  nginx-ssl-proxy:
+    image: danieldent/nginx-ssl-proxy
+    restart: always
+    environment:
+      UPSTREAM: frontend:3000
+      SERVERNAME: localhost
+      EXTRANAMES: www.localhost
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - "/etc/letsencrypt"
