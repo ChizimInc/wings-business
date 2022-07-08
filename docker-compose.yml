@@ -12,8 +12,8 @@ services:
     restart: always
     environment:
       UPSTREAM: frontend:3000
-      SERVERNAME: localhost
-      EXTRANAMES: www.localhost
+      SERVERNAME: wingsbusiness.eu
+      EXTRANAMES: www.wingsbusiness.eu
     ports:
       - "80:80"
       - "443:443"
