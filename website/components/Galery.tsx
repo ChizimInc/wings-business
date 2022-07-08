@@ -15,7 +15,7 @@ const Galery = (props: IGaleryProps) => {
        <div className='flex flex-wrap'>
         {
           props.album.map( (item) => (
-            <div>
+            <div key={item}>
               <div 
                 className='my-10 mx-5 relative overflow-hidden cursor-pointer'
                 onMouseEnter={() => setZoomIn(item)}
@@ -24,6 +24,7 @@ const Galery = (props: IGaleryProps) => {
               >
                 <Image 
                   src={item} width={234} height={349} 
+                  alt="image"
                   className={`
                     ${(zoomIn == item) ? 'scale-110' : ''} 
                     transition duration-300

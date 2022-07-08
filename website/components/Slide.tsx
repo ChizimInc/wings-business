@@ -57,17 +57,21 @@ export default function Slide(props: IAboutProps) {
             </div>
             <div className="absolute w-10 h-10 bg-app-color-300 top-[-10px] right-[-10px] z-[-1]"></div>
             <div className="absolute flex justify-center w-24 h-12 bg-app-color-100 bottom-0 ">
-              <Link href={{pathname: props.previusSlideLink}}>
+              <Link href={{pathname: props.previusSlideLink}} passHref>
                 <div 
                   style={{borderRight: '1px solid #eaf0ec61'}} 
                   className="w-1/2 flex justify-center items-center cursor-pointer hover:bg-app-color-200"
                 >
-                  <Image src="/assets/icons/left-arrow-slide.svg" width={16} height={16} />
+                  <Image src="/assets/icons/left-arrow-slide.svg" width={16} height={16} alt="image" />
                 </div>
               </Link>
-              <Link href={{pathname: props.nextSlideLink}}>
+              <Link href={{pathname: props.nextSlideLink}} passHref>
                 <div className="w-1/2 flex justify-center items-center cursor-pointer hover:bg-app-color-200">
-                  <Image src="/assets/icons/left-arrow-slide.svg" className="rotate-180" width={16} height={16} />
+                  <Image 
+                    src="/assets/icons/left-arrow-slide.svg" 
+                    className="rotate-180" width={16} height={16}
+                    alt="image" 
+                  />
                 </div>
               </Link>
             </div>
@@ -117,17 +121,21 @@ export default function Slide(props: IAboutProps) {
         </div>
         <div className="absolute w-10 h-10 bg-app-color-300 top-[-10px] right-[-10px] z-[-1]"></div>
         <div className="absolute flex justify-center w-24 h-12 bg-app-color-100 bottom-0 left-[-48px]">
-          <Link href={{pathname: props.previusSlideLink}}>
+          <Link href={{pathname: props.previusSlideLink}} passHref>
             <div 
               style={{borderRight: '1px solid #eaf0ec61'}} 
               className="w-1/2 flex justify-center items-center cursor-pointer hover:bg-app-color-200"
             >
-              <Image src="/assets/icons/left-arrow-slide.svg" width={16} height={16} />
+              <Image src="/assets/icons/left-arrow-slide.svg" width={16} height={16} alt="image" />
             </div>
           </Link>
-          <Link href={{pathname: props.nextSlideLink}}>
+          <Link href={{pathname: props.nextSlideLink}} passHref>
             <div className="w-1/2 flex justify-center items-center cursor-pointer hover:bg-app-color-200">
-              <Image src="/assets/icons/left-arrow-slide.svg" className="rotate-180" width={16} height={16} />
+              <Image 
+                src="/assets/icons/left-arrow-slide.svg" 
+                className="rotate-180" width={16} height={16} 
+                alt="image"
+              />
             </div>
           </Link>
         </div>
