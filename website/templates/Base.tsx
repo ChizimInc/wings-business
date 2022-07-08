@@ -8,7 +8,7 @@ const Base = (props: any) => (
   <div className="antialiased text-gray-600">
     <Meta title={AppConfig.title} description={AppConfig.description} />
     <Navbar />
-    <div>
+    <div className='mt-[4.5rem]'>
       {props.children}
     </div>
     <Footer />
