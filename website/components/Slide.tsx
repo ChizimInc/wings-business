@@ -17,7 +17,8 @@ type IAboutProps = {
 export default function Slide(props: IAboutProps) {
   return (
     <>
-    <div className="mx-3 lg:container mt-32 text-black flex flex-col md:flex-row items-center content-between justify-between">
+    <div className="mx-3 lg:container mt-32 text-black flex flex-col md:flex-row 
+                    items-center content-between justify-between relative">
       <div className="w-full md:w-1/2 relative sm:mr-[60px]">
         <span
           className="hidden lg:block h-[116%] opacity-50 absolute ml-[-17px] left-[-78px]"
@@ -93,15 +94,7 @@ export default function Slide(props: IAboutProps) {
             }
           </div>
         </div>
-        <span
-          className={`
-            hidden xl:block w-[115%] opacity-50 h-1 ml-[100px] absolute bottom-0 mb-[16px]
-            ${props.bigContainer ? 'mb-[0px]' : 'mb-[16px]'}
-          `}
-          style={{
-            borderTop: '2px solid #25723E'
-          }}
-        ></span>
+        
       </div>
       <div className="hidden md:block relative">
         <div 
@@ -136,6 +129,12 @@ export default function Slide(props: IAboutProps) {
           </Link>
         </div>
       </div>
+      <span
+          className="hidden xl:block w-[58%] opacity-50 h-1 ml-[100px] absolute bottom-0 z-[-1]"
+          style={{
+            borderTop: '2px solid #25723E'
+          }}
+        ></span>
     </div>
     </>
   )
