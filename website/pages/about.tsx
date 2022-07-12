@@ -4,7 +4,7 @@ export default function About() {
   return (
     <>
     <Slide 
-      image="/assets/images/slides/about.svg" 
+      image="/assets/images/slides/about.jpg" 
       title="ABOUT COMPANY"
       listItems={[
         'GTS8 s.r.o., in a short time has won an impeccable reputation in the field of landscaping and landscaping.',

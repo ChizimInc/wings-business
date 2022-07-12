@@ -18,7 +18,7 @@ export default function Slide(props: IAboutProps) {
   return (
     <>
     <div className="mx-3 lg:container mt-32 text-black flex flex-col md:flex-row items-center content-between justify-between">
-      <div className="md:w-1/2 relative sm:mr-[60px]">
+      <div className="w-full md:w-1/2 relative sm:mr-[60px]">
         <span
           className="hidden lg:block h-[116%] opacity-50 absolute ml-[-17px] left-[-78px]"
           style={{
@@ -45,11 +45,7 @@ export default function Slide(props: IAboutProps) {
         {/* ---------------- Mobile ------------------------ */}
           <div className=" md:hidden relative mt-6">
             <div 
-              className={`
-                ${props.smallContainer ? 'w-[100%]' : 'w-[100%]'} 
-                ${props.smallContainer ? 'h-[250px]' : 'h-[250px]'}
-                bg-cover z-50
-              `}
+              className="w-[100%] h-[250px] bg-cover z-50"
               style={{
                 backgroundImage: `url(${props.image})`
               }}

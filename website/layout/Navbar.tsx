@@ -54,7 +54,7 @@ export default function Navbar() {
         <div style={styles.image}>
           <div 
             className={`
-              navbar z-50 w-full h-[72px] items-center px-[4.25rem] flex
+              navbar z-50 w-full h-[72px] items-center px-4 sm:px-[4.25rem] flex
               ${isHome ? 'text-white' : 'text-app-color-100'}  
               ${backgroundColor}
             `}

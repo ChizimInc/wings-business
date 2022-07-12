@@ -5,7 +5,7 @@ export default function Services() {
   return (
     <>
       <Slide 
-        image="/assets/images/slides/services.svg" 
+        image="/assets/images/slides/services.jpg" 
         title="OUR SERVICES"
         headerText="Company GTS8 s.r.o. will be glad to offer you:"
         listItems={[

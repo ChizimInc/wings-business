@@ -5,7 +5,7 @@ export default function Projects() {
   return (
     <>
       <Slide 
-        image="/assets/images/slides/projects.svg" 
+        image="/assets/images/slides/projects.jpg" 
         title="OUR PROJECTS"
         listItems={[
           'Our joint project with Novello srl in Uzbekistan. '
@@ -16,14 +16,14 @@ export default function Projects() {
       />
       <Galery 
         album={[
-          '/assets/images/album/photo1.svg',
-          '/assets/images/album/photo2.svg',
-          '/assets/images/album/photo3.svg',
-          '/assets/images/album/photo4.svg',
-          '/assets/images/album/photo5.svg',
-          '/assets/images/album/photo6.svg',
-          '/assets/images/album/photo7.svg',
-          '/assets/images/album/photo8.svg',
+          '/assets/images/album/photo1.jpg',
+          '/assets/images/album/photo2.jpg',
+          '/assets/images/album/photo3.jpg',
+          '/assets/images/album/photo4.jpg',
+          '/assets/images/album/photo5.jpg',
+          '/assets/images/album/photo6.jpg',
+          '/assets/images/album/photo7.jpg',
+          '/assets/images/album/photo8.jpg',
         ]} 
       />
     </>

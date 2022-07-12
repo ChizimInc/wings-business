@@ -4,7 +4,7 @@ export default function Contacts() {
   return (
     <>
       <Slide 
-        image="/assets/images/slides/contacts.svg" 
+        image="/assets/images/slides/contacts.jpg" 
         title="CONTACTS"
         listItems={[
           'GTS 8 s.r.o.',

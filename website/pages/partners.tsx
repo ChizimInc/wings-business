@@ -5,7 +5,7 @@ export default function Partners() {
   return (
     <>
       <Slide 
-        image="/assets/images/slides/partners.svg" 
+        image="/assets/images/slides/partners.jpg" 
         title="OUR PARTNERS"
         listItems={[
           'Company GTS8 s.r.o. Together with Gospodăria Ţărănească “Nicolai Ţipovici” has its own plant nursery.',

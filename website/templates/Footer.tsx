@@ -8,7 +8,7 @@ const Footer = () => {
     <div 
       className={`
         ${isFixed ? 'md:absolute mt-5' : ''} 
-        bottom-0 w-full h-11 bg-white flex items-center px-[4.25rem]
+        bottom-0 w-full h-11 bg-white flex items-center px-4 sm:px-[4.25rem]
       `}
       style={{
         borderTop: '1px solid #EAF0EC'
