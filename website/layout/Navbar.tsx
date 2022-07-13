@@ -6,7 +6,7 @@ import { NavbarItems } from '../utils/AppData';
 
 export default function Navbar() {
   const router = useRouter()
-  const [itemHandler, setItemHandler] = useState(0);
+  const [itemHandler, setItemHandler] = useState('url("/assets/images/Main BG Photo.jpg")');
 
   const backgroundColor = (router.pathname === '/') ? 'color-black-fill' : 'bg-white'
   const homeBannerVisible = (router.pathname === '/') ? 'flex' : 'hidden'
@@ -22,23 +22,6 @@ export default function Navbar() {
       borderBottom: isFixed ? '1px solid #EAF0EC' : '',
       position: isFixed ? 'fixed' as 'fixed' : 'relative' as 'relative',
     },
-    image: {
-      transition: '1s',
-      backgroundImage: isHome && 
-                        itemHandler == 0 ? 'url("/assets/images/Main BG Photo.jpg")' : 
-                        itemHandler == 1 ? 'url("/assets/images/Main BG Photo.jpg")' : 
-                        itemHandler == 2 ? 'url("/assets/images/Our Partners Photo.jpg")' :
-                        itemHandler == 3 ? 'url("/assets/images/Our Services Photo.jpg")' :
-                        itemHandler == 4 ? 'url("/assets/images/Our Greenhouse Photo.jpg")' : 
-                        itemHandler == 5 ? 'url("/assets/images/Our Projects Photo.jpg")' :
-                        itemHandler == 6 ? 'url("/assets/images/Contacts Photo.jpg")' : '',
-      backgroundPosition: 'center',
-      width: '100%',
-      height: isHome ? '100vh' : '',
-      backgroundSize: 'cover',
-      position: isHome ? 'absolute' as 'absolute' : 'relative' as 'relative',
-      top: '0',
-    },
     span: {
       borderTop: '4px solid #B5363A'
     },
@@ -51,7 +34,18 @@ export default function Navbar() {
   return (
     <>
       <div style={styles.container}>
-        <div style={styles.image}>
+        <div 
+          style={{
+            transition: '2s',
+            backgroundImage: isHome ? itemHandler : '',
+            backgroundPosition: 'center',
+            width: '100%',
+            height: isHome ? '100vh' : '',
+            backgroundSize: 'cover',
+            position: isHome ? 'absolute' as 'absolute' : 'relative' as 'relative',
+            top: '0',
+          }}
+        >
           <div 
             className={`
               navbar z-50 w-full h-[72px] items-center px-4 sm:px-[4.25rem] flex
@@ -85,7 +79,7 @@ export default function Navbar() {
                 NavbarItems.map((item) => (
                   <div
                     className='flex flex-col relative justify-center sm:items-center text-[22pt] font-medium'   
-                    onMouseEnter={() => setItemHandler(item.id)}    
+                    onMouseEnter={() => setItemHandler(item.image)}    
                     key={item.id}              
                   >
                     <div 
@@ -104,8 +98,8 @@ export default function Navbar() {
                       className='absolute opacity-50 z-20 bg-app-color-100'
                       style={{
                         transition: '.5s',
-                        width: itemHandler == item.id ? '100%' : '0',
-                        height: itemHandler == item.id ? '100%' : '0',
+                        width: itemHandler == item.image ? '100%' : '0',
+                        height: itemHandler == item.image ? '100%' : '0',
                       }}
                     ></div>
                   </div>
