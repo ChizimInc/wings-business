@@ -19,7 +19,7 @@ export default function Slide(props: IAboutProps) {
     <>
     <div className="mx-3 lg:container mt-32 text-black flex flex-col md:flex-row 
                     items-center content-between justify-between relative">
-      <div className="w-full md:w-1/2 relative sm:mr-[60px]">
+      <div className="w-full md:w-1/2 relative">
         <span
           className="hidden lg:block h-[116%] opacity-50 absolute ml-[-17px] left-[-78px]"
           style={{

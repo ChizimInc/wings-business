@@ -81,3 +81,10 @@ h2.background {
 @media only screen and (max-width: 920px) {
   
 }
+
+@media only screen and (max-height: 700px) {
+  .footer {
+    position: unset !important;
+    margin-top: 60px;
+  }
+}
