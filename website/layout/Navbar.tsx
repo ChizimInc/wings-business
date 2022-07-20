@@ -4,17 +4,9 @@ import { useState } from 'react';
 import { useRouter } from 'next/router';
 import { NavbarItems } from '../utils/AppData';
 
-import main from '../public/assets/images/Main BG Photo.jpg'
-import contacts from '../public/assets/images/Contacts Photo.jpg'
-import greenhouse from '../public/assets/images/Our greenhouse Photo.jpg'
-import partners from '../public/assets/images/Our partners Photo.jpg'
-import projects from '../public/assets/images/Our projects Photo.jpg'
-import services from '../public/assets/images/Our services Photo.jpg'
-
 
 export default function Navbar() {
   const router = useRouter()
-  const [itemHandler, setItemHandler] = useState(main.src);
   const [itemHandlerId, setItemHandlerId] = useState(0)
 
   const backgroundColor = (router.pathname === '/') ? 'color-black-fill' : 'bg-white'
@@ -39,32 +31,6 @@ export default function Navbar() {
     }
   }
 
-  const ChangeBackgroud = (id:number) => {
-    setItemHandlerId(id)
-    switch (id) {
-      case 1:
-        setItemHandler(main.src)
-        break;
-      case 2:
-        setItemHandler(partners.src)
-        break;
-      case 3:
-        setItemHandler(services.src)
-        break;
-      case 4:
-        setItemHandler(greenhouse.src)
-        break;
-      case 5:
-        setItemHandler(projects.src)
-        break;
-      case 6:
-        setItemHandler(contacts.src)
-        break;
-      default:
-        setItemHandler(main.src)
-    }
-  }
-
   
   return (
     <>
@@ -72,7 +38,7 @@ export default function Navbar() {
         <div 
           style={{
             transition: '.35s',
-            backgroundImage: isHome ? `url('${itemHandler}')` : '',
+            backgroundImage: isHome ? "url('/assets/images/Main BG Photo.jpg')" : '',
             backgroundPosition: 'center',
             width: '100%',
             height: isHome ? '100vh' : '',
@@ -115,7 +81,7 @@ export default function Navbar() {
                   <Link href={item.link}>
                     <div
                       className='flex flex-col relative cursor-pointer justify-center sm:items-center text-[22pt] font-medium'   
-                      onMouseEnter={() => ChangeBackgroud(item.id)}    
+                      onMouseEnter={() => setItemHandlerId(item.id)}    
                       key={item.id}              
                     >
                       <div 
