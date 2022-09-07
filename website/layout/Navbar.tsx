@@ -37,8 +37,6 @@ export default function Navbar() {
       <div style={styles.container}>
         <div 
           style={{
-            transition: '1s',
-            backgroundImage: isHome ? itemHandler : '',
             transition: '.35s',
             backgroundImage: isHome ? "url('/assets/images/Main BG Photo.jpg')" : '',
             backgroundPosition: 'center',
