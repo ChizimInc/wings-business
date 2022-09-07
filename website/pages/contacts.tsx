@@ -7,16 +7,12 @@ export default function Contacts() {
         image="/assets/images/slides/contacts.jpg" 
         title="CONTACTS"
         listItems={[
-          'GTS 8 s.r.o.',
+          'WINGS BUSINESS s.r.o.',
           'IDNO (IČO): 50 575 384',
           'Adres: Mickiewiczova 16',
-          'Bratislava 811 07',
+          'Bratislava 811 07 Slovakia',
           'EUR IBAN: SK7475000000004025759062',
-          'BIC: CEKOSKBX',
-          'Address banka: ČSOB banka, a.s.',
-          'Michalská 18',
-          '815 63 Bratislava',
-          'office.gts8@gmail.com'
+          'info@wingsbusiness.eu'
         ]}
         smallMargin
         previusSlideLink="projects"

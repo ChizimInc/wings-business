@@ -36,7 +36,7 @@ export default function Navbar() {
       <div style={styles.container}>
         <div 
           style={{
-            transition: '2s',
+            transition: '1s',
             backgroundImage: isHome ? itemHandler : '',
             backgroundPosition: 'center',
             width: '100%',

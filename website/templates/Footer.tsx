@@ -14,7 +14,7 @@ const Footer = () => {
         borderTop: '1px solid #EAF0EC'
       }}
     >
-      GTS 8 s.r.o. 2018
+      WINGS BUSINESS s.r.o. 2018
     </div>
 )};
 

@@ -7,7 +7,7 @@ export default function Services() {
       <Slide 
         image="/assets/images/slides/services.jpg" 
         title="OUR SERVICES"
-        headerText="Company GTS8 s.r.o. will be glad to offer you:"
+        headerText="Company WINGS BUSINESS s.r.o. will be glad to offer you:"
         listItems={[
           'development of a design project of any level of complexity',
           'planting of fruit and ornamental plants, large trees',

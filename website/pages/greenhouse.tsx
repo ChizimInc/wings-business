@@ -8,7 +8,7 @@ export default function Greenhouse() {
         image="/assets/images/slides/greenhouse.jpg" 
         title="OUR GREENHOUSE"
         listItems={[
-          'Company GTS8 s.r.o. Together with Gospodăria Ţărănească “Nicolai Ţipovici” has its own plant nursery.',
+          'Company WINGS BUSINESS s.r.o. Together with Gospodăria Ţărănească “Nicolai Ţipovici” has its own plant nursery.',
           'The nursery is located in Moldova, the unique climate of which allows to grow high-quality plants. We offer varietal seedlings of various plants, perennials, seedlings of annual flowers and varietal roses, related products.',
         ]}
         smallContainer
