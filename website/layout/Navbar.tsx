@@ -4,9 +4,10 @@ import { useState } from 'react';
 import { useRouter } from 'next/router';
 import { NavbarItems } from '../utils/AppData';
 
+
 export default function Navbar() {
   const router = useRouter()
-  const [itemHandler, setItemHandler] = useState('url("/assets/images/Main BG Photo.jpg")');
+  const [itemHandlerId, setItemHandlerId] = useState(0)
 
   const backgroundColor = (router.pathname === '/') ? 'color-black-fill' : 'bg-white'
   const homeBannerVisible = (router.pathname === '/') ? 'flex' : 'hidden'
@@ -38,6 +39,8 @@ export default function Navbar() {
           style={{
             transition: '1s',
             backgroundImage: isHome ? itemHandler : '',
+            transition: '.35s',
+            backgroundImage: isHome ? "url('/assets/images/Main BG Photo.jpg')" : '',
             backgroundPosition: 'center',
             width: '100%',
             height: isHome ? '100vh' : '',
@@ -77,32 +80,32 @@ export default function Navbar() {
             >
               {
                 NavbarItems.map((item) => (
-                  <div
-                    className='flex flex-col relative justify-center sm:items-center text-[22pt] font-medium'   
-                    onMouseEnter={() => setItemHandler(item.image)}    
-                    key={item.id}              
-                  >
-                    <div 
-                      className='z-30 ml-[68px] sm:ml-0'
-                      
+                  <Link href={item.link}>
+                    <div
+                      className='flex flex-col relative cursor-pointer justify-center sm:items-center text-[22pt] font-medium'   
+                      onMouseEnter={() => setItemHandlerId(item.id)}    
+                      key={item.id}              
                     >
-                      <div>{item.title}</div>
-                      <Link href={item.link}>
-                        <div className='text-[9pt] flex items-center cursor-pointer'>
-                          <p className='mr-2'>See more</p>
-                          <img className='mt-1' width="10px" src='/assets/icons/arrow.svg' />
-                        </div>
-                      </Link>
+                      <div 
+                        className='z-30 ml-[68px] sm:ml-0'
+                        
+                      >
+                        <div>{item.title}</div>
+                          <div className='text-[9pt] flex items-center cursor-pointer'>
+                            <p className='mr-2'>See more</p>
+                            <img className='mt-1' width="10px" src='/assets/icons/arrow.svg' />
+                          </div>
+                      </div>
+                      <div 
+                        className='absolute opacity-50 z-20 bg-app-color-100'
+                        style={{
+                          transition: '.5s',
+                          width: itemHandlerId == item.id ? '100%' : '0',
+                          height: itemHandlerId == item.id ? '100%' : '0',
+                        }}
+                      ></div>
                     </div>
-                    <div 
-                      className='absolute opacity-50 z-20 bg-app-color-100'
-                      style={{
-                        transition: '.5s',
-                        width: itemHandler == item.image ? '100%' : '0',
-                        height: itemHandler == item.image ? '100%' : '0',
-                      }}
-                    ></div>
-                  </div>
+                  </Link>
                 ))
               }
             </div>
