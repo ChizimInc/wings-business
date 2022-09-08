@@ -4,7 +4,8 @@ import Link from "next/link";
 type IAboutProps = {
   title: string;
   headerText?: string;
-  listItems: string[];
+  listItems?: string[];
+  contentText?: string;
   lastLine?: string;
   smallMargin?: boolean;
   bigContainer?: boolean;
@@ -81,13 +82,16 @@ export default function Slide(props: IAboutProps) {
             }
           </div>
           {
-            props.listItems.map((items) => (
+            props.listItems?.map((items) => (
               <div 
                 key={items}
                 className={`${props.smallMargin ? 'my-2' : 'my-4'} text-[8pt]`}
               >{items}</div>
             ))
           }
+          <div>
+            { props.contentText }
+          </div>
           <div className="my-4">
             {
               props.lastLine
