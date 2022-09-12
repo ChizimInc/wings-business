@@ -27,8 +27,8 @@ export const NavbarItems = [
   },
   {
     id: 5,
-    title: 'Our Projects',
-    link: '/projects',
+    title: 'Wholesale Agricultural Products',
+    link: '/products',
     image: 'url("/assets/images/Our Projects Photo.jpg")'
   },
   {

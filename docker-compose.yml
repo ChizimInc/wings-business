@@ -5,6 +5,8 @@ services:
     build: 
       dockerfile: ./docker/frontend/Dockerfile
       context: ./
+    volumes:
+      staticbuild: /app/out
 
 
   nginx-ssl-proxy:

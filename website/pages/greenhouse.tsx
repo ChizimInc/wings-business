@@ -13,7 +13,7 @@ export default function Greenhouse() {
         ]}
         smallContainer
         previusSlideLink="services"
-        nextSlideLink="projects"
+        nextSlideLink="products"
       />
       <Galery 
         album={[

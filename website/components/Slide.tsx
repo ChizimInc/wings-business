@@ -13,6 +13,7 @@ type IAboutProps = {
   image: string;
   nextSlideLink?: string;
   previusSlideLink?: string;
+  button?: string;
 }
 
 export default function Slide(props: IAboutProps) {
