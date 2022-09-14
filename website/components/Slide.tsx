@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { SaleModalButton } from "./sale/SaleModalButton"
+import { PurchaseModalButton } from "./purchase/PurchaseModalButton"
+
 type IAboutProps = {
   title: string;
   headerText?: string;
@@ -13,7 +16,8 @@ type IAboutProps = {
   image: string;
   nextSlideLink?: string;
   previusSlideLink?: string;
-  button?: string;
+  saleModalButton?: boolean;
+  purchaseModalButton?: boolean;
 }
 
 export default function Slide(props: IAboutProps) {
@@ -96,6 +100,16 @@ export default function Slide(props: IAboutProps) {
           <div className="my-4">
             {
               props.lastLine
+            }
+          </div>
+          <div>
+            { 
+              props.saleModalButton && <SaleModalButton btnTitle="Sale button" />  
+            }
+          </div>
+          <div>
+            {
+              props.purchaseModalButton && <PurchaseModalButton btnTitle="Purchase button" />
             }
           </div>
         </div>

@@ -14,6 +14,7 @@ export default function Sale() {
         lastLine="Thanks to honesty, the fulfillment of all contractual and contractual obligations for the sale of agricultural products, we have received a high level of trust from our customers."
         previusSlideLink="partners"
         nextSlideLink="greenhouse"
+        saleModalButton
       />
     </>
   )

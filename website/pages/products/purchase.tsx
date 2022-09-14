@@ -14,6 +14,7 @@ export default function Purchase() {
         lastLine="We will be glad to cooperate with you!"
         previusSlideLink="partners"
         nextSlideLink="greenhouse"
+        purchaseModalButton
       />
     </>
   )
