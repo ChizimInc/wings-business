@@ -4,10 +4,13 @@ import Link from "next/link";
 import { SaleModalButton } from "./sale/SaleModalButton"
 import { PurchaseModalButton } from "./purchase/PurchaseModalButton"
 
+import LeftArrow from "../public/assets/icons/left-arrow-slide.svg"
+
 type IAboutProps = {
   title: string;
   headerText?: string;
   listItems?: string[];
+  longLeftLine?: boolean;
   contentText?: string;
   lastLine?: string;
   smallMargin?: boolean;
@@ -27,7 +30,9 @@ export default function Slide(props: IAboutProps) {
                     items-center content-between justify-between relative">
       <div className="w-full md:w-1/2 relative">
         <span
-          className="hidden lg:block h-[116%] opacity-50 absolute ml-[-17px] left-[-78px]"
+          className={`hidden lg:block 
+                    ${props.longLeftLine ? 'h-[141%]' : 'h-[116%]'} 
+                    opacity-50 absolute ml-[-17px] left-[-78px]`}
           style={{
             borderLeft: '2px solid #25723E',
             marginTop: ''
@@ -59,7 +64,8 @@ export default function Slide(props: IAboutProps) {
             >
             </div>
             <div className="absolute w-10 h-10 bg-app-color-300 top-[-10px] right-[-10px] z-[-1]"></div>
-            <div className="absolute flex justify-center w-24 h-12 bg-app-color-100 bottom-0 ">
+            <div className={`${props.previusSlideLink ? 'absolute' : 'hidden'} 
+                              absolute flex justify-center w-24 h-12 bg-app-color-100 bottom-0 `}>
               <Link href={{pathname: props.previusSlideLink}} passHref>
                 <div 
                   style={{borderRight: '1px solid #eaf0ec61'}} 
@@ -128,7 +134,7 @@ export default function Slide(props: IAboutProps) {
         >
         </div>
         <div className="absolute w-10 h-10 bg-app-color-300 top-[-10px] right-[-10px] z-[-1]"></div>
-        <div className="absolute flex justify-center w-24 h-12 bg-app-color-100 bottom-0 left-[-48px]">
+        <div className={ ` ${props.previusSlideLink ? 'absolute' : 'hidden'} flex justify-center w-24 h-12 bg-app-color-100 bottom-0 left-[-48px]`}>
           <Link href={{pathname: props.previusSlideLink}} passHref>
             <div 
               style={{borderRight: '1px solid #eaf0ec61'}} 

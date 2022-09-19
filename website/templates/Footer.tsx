@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 
 const Footer = () => {
   const router = useRouter()
-  const isFixed = (router.pathname !== '/greenhouse' && router.pathname !== '/projects') ? true : false
+  const isFixed = (router.pathname !== '/greenhouse' && router.pathname !== '/products/sale') ? true : false
 
   return(
     <div 
