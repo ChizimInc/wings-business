@@ -15,7 +15,7 @@ export default function Sale() {
         smallMargin
         smallContainer
         lastLine="Thanks to honesty, the fulfillment of all contractual and contractual obligations for the sale of agricultural products, we have received a high level of trust from our customers."
-
+        showLastSpan
       />
       <div className="mt-[40px] sm:flex justify-around max-w-[2000px] m-auto mb-[50px]">
         <div className="ml-4">

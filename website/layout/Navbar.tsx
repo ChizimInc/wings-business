@@ -85,7 +85,7 @@ export default function Navbar() {
                       key={item.id}              
                     >
                       <div 
-                        className='z-30 ml-[68px] sm:ml-0'
+                        className='z-30 ml-[68px] max-w-[80%] sm:ml-0'
                         
                       >
                         <div>{item.title}</div>

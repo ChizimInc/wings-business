@@ -1,3 +1,5 @@
+import * as React from 'react'
+
 import Image from "next/image";
 import Link from "next/link";
 
@@ -7,10 +9,13 @@ import { PurchaseModalButton } from "./purchase/PurchaseModalButton"
 import LeftArrow from "../public/assets/icons/left-arrow-slide.svg"
 
 type IAboutProps = {
+  children?: React.ReactNode;
   title: string;
   headerText?: string;
   listItems?: string[];
   longLeftLine?: boolean;
+  smallLeftLine?: boolean;
+  showLastSpan?: boolean;
   contentText?: string;
   lastLine?: string;
   smallMargin?: boolean;
@@ -26,12 +31,12 @@ type IAboutProps = {
 export default function Slide(props: IAboutProps) {
   return (
     <>
-    <div className="mx-3 lg:container mt-32 text-black flex flex-col md:flex-row 
-                    items-center content-between justify-between relative">
+    <div className="mx-3 lg:container mt-28 text-black flex flex-col align-start md:flex-row 
+                    content-between justify-between relative">
       <div className="w-full md:w-1/2 relative">
         <span
           className={`hidden lg:block 
-                    ${props.longLeftLine ? 'h-[141%]' : 'h-[116%]'} 
+                    ${props.longLeftLine ? 'h-[141%]' : props.smallLeftLine ? 'h-[78%]' : 'h-[116%]'} 
                     opacity-50 absolute ml-[-17px] left-[-78px]`}
           style={{
             borderLeft: '2px solid #25723E',
@@ -86,7 +91,7 @@ export default function Slide(props: IAboutProps) {
             </div>
           </div>
         {/* ----------------end Mobile ------------------------ */}
-        <div className={`text-[9pt] ${props.bigContainer ? 'mt-2' : 'mt-16'} `}>
+        <div className={`text-[9pt] ${props.bigContainer ? 'mt-2 mb-2' : 'mt-16 mb-16'} `}>
           <div className="my-4">
             {
               props.headerText
@@ -107,6 +112,9 @@ export default function Slide(props: IAboutProps) {
             {
               props.lastLine
             }
+          </div>
+          <div>
+            { props.children }
           </div>
           <div>
             { 
@@ -155,7 +163,7 @@ export default function Slide(props: IAboutProps) {
         </div>
       </div>
       <span
-          className="hidden xl:block w-[58%] opacity-50 h-1 ml-[100px] absolute bottom-0 z-[-1]"
+          className={`hidden ${props.showLastSpan ? 'xl:block' : ''} w-[58%] opacity-50 h-1 ml-[100px] absolute bottom-0 z-[-1]`}
           style={{
             borderTop: '2px solid #25723E'
           }}

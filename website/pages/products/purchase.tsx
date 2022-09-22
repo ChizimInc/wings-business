@@ -13,6 +13,7 @@ export default function Purchase() {
         smallMargin
         smallContainer
         lastLine="We will be glad to cooperate with you!"
+        showLastSpan
       />
       <div className="sm:flex justify-evenly items-center mt-8 w-full">
         <div 

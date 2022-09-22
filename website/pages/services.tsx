@@ -13,7 +13,8 @@ export default function Services() {
         bigContainer
         lastLine="Our company carries out works with high quality, which is provided at the enterprise by a three-level control system “brigadier-foreman-director”. We provide a guarantee for all types of work."
         previusSlideLink="partners"
-        nextSlideLink="greenhouse"
+        nextSlideLink="activities/lawn_improvement"
+        showLastSpan
       />
     </>
   )

@@ -15,8 +15,9 @@ export default function Contacts() {
           'info@wingsbusiness.eu'
         ]}
         smallMargin
-        previusSlideLink="products"
+        previusSlideLink="products/sale"
         nextSlideLink="about"
+        showLastSpan
       />
     </>
   )

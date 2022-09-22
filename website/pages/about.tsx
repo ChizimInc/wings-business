@@ -14,6 +14,7 @@ export default function About() {
       ]}
       previusSlideLink="/"
       nextSlideLink="partners"
+      showLastSpan
     />
     </>
   )

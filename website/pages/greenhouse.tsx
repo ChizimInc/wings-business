@@ -14,6 +14,7 @@ export default function Greenhouse() {
         smallContainer
         previusSlideLink="services"
         nextSlideLink="products"
+        showLastSpan
       />
       <Galery 
         album={[
