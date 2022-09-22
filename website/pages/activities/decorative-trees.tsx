@@ -41,7 +41,7 @@ export default function DecorativeTrees() {
           <ImageList data={DecorativeTreesData} />
         </div>
         <div className='my-4 mb-12'>
-          <p className='underline'>*Can't find the product you're looking for? Please let us know about it!</p>
+          <p className='underline'>*Can&apos;t find the product you&apos;re looking for? Please let us know about it!</p>
           <p className='my-3'>Our specialists will select for you the varieties of trees that will correspond to the peculiarities of the growing conditions, as well as the optimal care that you can provide them.</p>
           <p className='my-3'>We will turn your site into a fragrant oasis with minimal time and labor.</p>
           <p className='my-3'>Our company is interested in development. WINGS BUSINESS s.r.o invites landscaping, gardening and landscaping suppliers to cooperate.</p>

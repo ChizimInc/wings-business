@@ -10,7 +10,7 @@ export const ImageList = (props: IImageListProps) => {
       <div className='flex w-full align-center justify-start flex-wrap'>
         {
           props.data.map( ({title, src}) => (
-            <div className='w-[250px] mx-6 my-3'>
+            <div className='w-[250px] mx-6 my-3' key={title}>
               <div className=' flex items-center justify-center h-[50px]'>
                 <p className=''>{title}</p>
               </div>

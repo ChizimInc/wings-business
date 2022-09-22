@@ -18,7 +18,7 @@ export default function Flowers() {
         <div className='mb-5'>
           <div>
             <p className='my-2'>By purchasing seed material from us, you have a 100% chance to receive a high quality product, as we set high production standards and assure the quality control process. We choose only those products that have earned the trust of our Chief Production Engineers.</p>
-            <p className='my-2'>There are so many colors that it's easy to get confused, therefore we classified those conveniently:</p>
+            <p className='my-2'>There are so many colors that it&apos;s easy to get confused, therefore we classified those conveniently:</p>
           </div>
         </div>
       </Slide>
