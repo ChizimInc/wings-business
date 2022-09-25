@@ -19,7 +19,17 @@ export default function Lawn_improvement() {
             <p className='my-2'>If you want to be sure about the quality of the lawn on your site, then the best thing you can do is to entrust us with the arrangement or sowing of the lawn.</p>
             <p className='my-2'>Here you can find lawn grasses for the widest range of uses: for landscaping shady places, sports and play areas, creating an unpretentious and undersized lawn, grass mixtures for the southern and northern regions, for landscaping urban areas and for special purposes.</p>
             <div className='flex justify-center my-5'>
-              <List title='Our services:' />
+              <List 
+                title='Our services:' 
+                items={
+                  [
+                    'Complex earthworks',
+                    'Lawn care',
+                    'Sale of rolled lawn',
+                    'Landscaping and landscaping turnkey areas'
+                  ]
+                } 
+              />
             </div>
             <p className='my-2'>We select carefully the certified grass mixtures, prepare the soil, supervise the sowing of seeds and the cultivated lawn.</p>
             <p className='my-2'>Our important advantage is the ability to buy lawn grass from the best agricultural producers around the world. During the existence of our company in the agro-sales market, we have found reliable partners and grateful customers.</p>
@@ -30,7 +40,7 @@ export default function Lawn_improvement() {
         </div>
       </Slide>
       <div className="sm:flex justify-evenly items-center mb-16 w-full">
-        <Link href="/">
+        <Link href="/" passHref>
           <div 
             className="flex ml-4 mr-4 items-center cursor-pointer bg-[#f8f8f8] hover:bg-[#ebebeb] p-5 rounded-3xl ease-out duration-300"
             style={{backgroundColor: '#25723e', color: 'white'}}
@@ -38,7 +48,7 @@ export default function Lawn_improvement() {
             Back to menu
           </div>
         </Link>
-        <Link href="flowers">
+        <Link href="flowers" passHref>
           <div 
             className="flex mt-4 ml-4 mr-4 items-center cursor-pointer bg-[#f8f8f8] hover:bg-[#ebebeb] p-5 rounded-3xl ease-out duration-300"
             style={{backgroundColor: '#25723e', color: 'white'}}

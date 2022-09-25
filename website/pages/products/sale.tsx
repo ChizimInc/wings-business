@@ -74,7 +74,7 @@ export default function Sale() {
         </div>
       </div>
       <div className="sm:flex justify-evenly items-center mb-[100px] w-full">
-        <Link href="purchase">
+        <Link href="purchase" passHref>
           <div 
             className="flex ml-4 mr-4 items-center cursor-pointer bg-[#f8f8f8] hover:bg-[#ebebeb] p-5 rounded-3xl ease-out duration-300"
             style={{backgroundColor: '#25723e', color: 'white'}}

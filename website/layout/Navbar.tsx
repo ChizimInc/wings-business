@@ -88,11 +88,11 @@ export default function Navbar() {
                         className='z-30 ml-[68px] max-w-[80%] sm:ml-0'
                         
                       >
-                        <div>{item.title}</div>
-                          <div className='text-[9pt] flex items-center cursor-pointer'>
-                            <p className='mr-2'>See more</p>
-                            <img className='mt-1' width="10px" src='/assets/icons/arrow.svg' />
-                          </div>
+                        <div className='leading-9'>{item.title}</div>
+                        <div className='text-[9pt] mt-2 flex items-center cursor-pointer'>
+                          <p className='mr-2'>See more</p>
+                          <img className='mt-1' width="10px" src='/assets/icons/arrow.svg' />
+                        </div>
                       </div>
                       <div 
                         className='absolute opacity-50 z-20 bg-app-color-100'

@@ -2,28 +2,23 @@ import {VscDebugBreakpointLog} from 'react-icons/vsc'
 
 type IListProps = {
   title: string;
+  items: string[];
 }
 
 export const List = (props: IListProps) => {
   return (
     <div>
       <p>{props.title}</p>
-      <div className="flex items-center mt-2">
-        <VscDebugBreakpointLog />
-        <p className="ml-2">Complex earthworks</p>
-      </div>
-      <div className="flex items-center mt-2">
-        <VscDebugBreakpointLog />
-        <p className="ml-2">Lawn care</p>
-      </div>
-      <div className="flex items-center mt-2">
-        <VscDebugBreakpointLog />
-        <p className="ml-2">Sale of rolled lawn</p>
-      </div>
-      <div className="flex items-center mt-2">
-        <VscDebugBreakpointLog />
-        <p className="ml-2">Landscaping and landscaping turnkey areas</p>
-      </div>
+      {
+        props.items.map( item => (
+          <div className="flex items-center mt-2" key={item}>
+            <div className='w-[16px] h-[16px]'>
+              <VscDebugBreakpointLog />
+            </div>
+            <p className="ml-2">{item}</p>
+          </div>
+        ) )
+      }
     </div>
   )
 }

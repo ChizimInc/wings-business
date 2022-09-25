@@ -23,7 +23,7 @@ export default function IrrigationSystems() {
         </div>
       </Slide>
       <div className="sm:flex justify-evenly items-center mb-16 w-full">
-        <Link href="flowers">
+        <Link href="flowers" passHref>
           <div 
             className="flex ml-4 mr-4 items-center cursor-pointer bg-[#f8f8f8] hover:bg-[#ebebeb] p-5 rounded-3xl ease-out duration-300"
             style={{backgroundColor: '#25723e', color: 'white'}}
@@ -31,7 +31,7 @@ export default function IrrigationSystems() {
             Back: Annual and perennial flowers
           </div>
         </Link>
-        <Link href="decorative-trees">
+        <Link href="decorative-trees" passHref>
           <div 
             className="flex mt-4 ml-4 mr-4 items-center cursor-pointer bg-[#f8f8f8] hover:bg-[#ebebeb] p-5 rounded-3xl ease-out duration-300"
             style={{backgroundColor: '#25723e', color: 'white'}}

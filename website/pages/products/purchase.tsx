@@ -22,7 +22,7 @@ export default function Purchase() {
           >
           Purchase of agricultural raw materials
         </div>
-        <Link href="sale">
+        <Link href="sale" passHref>
           <div 
             className="flex mt-4 ml-4 mr-4 items-center cursor-pointer bg-[#f8f8f8] hover:bg-[#ebebeb] p-5 rounded-3xl ease-out duration-300"
             style={{backgroundColor: '#25723e', color: 'white'}}

@@ -23,32 +23,34 @@ export default function DecorativeTrees() {
           </div>
         </div>
       </Slide>
-      <div className='mx-[160px] mb-24'>
-        <div>
-          <p className='text-black'>Coniferous trees</p>
-          <ImageList data={ConiferousTreesData} />
-        </div>
-        <div>
-          <p className='text-black mt-6'>Deciduous trees</p>
-          <ImageList data={DeciduousTreeData} />
-        </div>
-        <div>
-          <p className='text-black mt-6'>Frost Hardy Ornamental Trees/Most Cold Hardy Plants</p>
-          <ImageList data={OrnamentalTreeData} />
-        </div>
-        <div>
-          <p className='text-black mt-6'>Decorative flowering trees</p>
-          <ImageList data={DecorativeTreesData} />
-        </div>
-        <div className='my-4 mb-12'>
-          <p className='underline'>*Can&apos;t find the product you&apos;re looking for? Please let us know about it!</p>
-          <p className='my-3'>Our specialists will select for you the varieties of trees that will correspond to the peculiarities of the growing conditions, as well as the optimal care that you can provide them.</p>
-          <p className='my-3'>We will turn your site into a fragrant oasis with minimal time and labor.</p>
-          <p className='my-3'>Our company is interested in development. WINGS BUSINESS s.r.o invites landscaping, gardening and landscaping suppliers to cooperate.</p>
+      <div className='mx-2 lg:mx-[100px] flex justify-center'>
+        <div className='my-4 mb-12 max-w-[1219px]'>
+          <div>
+            <p className='text-black'>Coniferous trees</p>
+            <ImageList data={ConiferousTreesData} />
+          </div>
+          <div>
+            <p className='text-black mt-6'>Deciduous trees</p>
+            <ImageList data={DeciduousTreeData} />
+          </div>
+          <div>
+            <p className='text-black mt-6'>Frost Hardy Ornamental Trees/Most Cold Hardy Plants</p>
+            <ImageList data={OrnamentalTreeData} />
+          </div>
+          <div>
+            <p className='text-black mt-6'>Decorative flowering trees</p>
+            <ImageList data={DecorativeTreesData} />
+          </div>
+          <div className='my-4 mb-12'>
+            <p className='underline'>*Can&apos;t find the product you&apos;re looking for? Please let us know about it!</p>
+            <p className='my-3'>Our specialists will select for you the varieties of trees that will correspond to the peculiarities of the growing conditions, as well as the optimal care that you can provide them.</p>
+            <p className='my-3'>We will turn your site into a fragrant oasis with minimal time and labor.</p>
+            <p className='my-3'>Our company is interested in development. WINGS BUSINESS s.r.o invites landscaping, gardening and landscaping suppliers to cooperate.</p>
+          </div>
         </div>
       </div>
       <div className="sm:flex justify-evenly items-center mb-16 w-full">
-        <Link href="irrigation-systems">
+        <Link href="irrigation-systems" passHref>
           <div 
             className="flex ml-4 mr-4 items-center cursor-pointer bg-[#f8f8f8] hover:bg-[#ebebeb] p-5 rounded-3xl ease-out duration-300"
             style={{backgroundColor: '#25723e', color: 'white'}}
@@ -56,7 +58,7 @@ export default function DecorativeTrees() {
             Back: Irrigation systems for watering plants
           </div>
         </Link>
-        <Link href="/products/purchase">
+        <Link href="/products/purchase" passHref>
           <div 
             className="flex mt-4 ml-4 mr-4 items-center cursor-pointer bg-[#f8f8f8] hover:bg-[#ebebeb] p-5 rounded-3xl ease-out duration-300"
             style={{backgroundColor: '#25723e', color: 'white'}}

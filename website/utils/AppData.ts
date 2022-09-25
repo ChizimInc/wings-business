@@ -15,8 +15,8 @@ export const NavbarItems = [
   },
   {
     id: 3,
-    title: 'Our Services',
-    link: '/services',
+    title: 'Rolled metal products and equipment for agriculture',
+    link: '/agriculture/rolled-metal',
     image: 'url("/assets/images/Our Services Photo.jpg")'
   },
   {

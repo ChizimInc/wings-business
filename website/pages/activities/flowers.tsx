@@ -22,23 +22,25 @@ export default function Flowers() {
           </div>
         </div>
       </Slide>
-      <div className='mx-[160px] mb-24'>
-        <div>
-          <p className='text-black'>Annual flowers:</p>
-          <ImageList data={AnnualFlowerData} />
-        </div>
-        <div>
-          <p className='text-black mt-6'>Perennial flower crops:</p>
-          <ImageList data={PerennialFlowerData} />
-        </div>
-        <div className='my-4 mb-12'>
-          <p className='underline'>*Also, you can write to us and we will find the best fit plant for you.</p>
-          <p className='my-3'>Our main mission is to help you build your dream garden.</p>
-          <p className='my-3'>Our company is interested in development. WINGS BUSINESS s.r.o invites landscaping, gardening and landscaping suppliers to cooperate.</p>
+      <div className='mx-2 lg:mx-[100px] flex justify-center'>
+        <div className='my-4 mb-12 max-w-[1219px]'>
+          <div>
+            <p className='text-black'>Annual flowers:</p>
+            <ImageList data={AnnualFlowerData} />
+          </div>
+          <div>
+            <p className='text-black mt-6'>Perennial flower crops:</p>
+            <ImageList data={PerennialFlowerData} />
+          </div>
+          <div className='my-4 mb-12'>
+            <p className='underline'>*Also, you can write to us and we will find the best fit plant for you.</p>
+            <p className='my-3'>Our main mission is to help you build your dream garden.</p>
+            <p className='my-3'>Our company is interested in development. WINGS BUSINESS s.r.o invites landscaping, gardening and landscaping suppliers to cooperate.</p>
+          </div>
         </div>
       </div>
       <div className="sm:flex justify-evenly items-center mb-16 w-full">
-        <Link href="lawn_improvement">
+        <Link href="lawn_improvement" passHref>
           <div 
             className="flex ml-4 mr-4 items-center cursor-pointer bg-[#f8f8f8] hover:bg-[#ebebeb] p-5 rounded-3xl ease-out duration-300"
             style={{backgroundColor: '#25723e', color: 'white'}}
@@ -46,7 +48,7 @@ export default function Flowers() {
             Back: Lawn improvement
           </div>
         </Link>
-        <Link href="irrigation-systems">
+        <Link href="irrigation-systems" passHref>
           <div 
             className="flex mt-4 ml-4 mr-4 items-center cursor-pointer bg-[#f8f8f8] hover:bg-[#ebebeb] p-5 rounded-3xl ease-out duration-300"
             style={{backgroundColor: '#25723e', color: 'white'}}
