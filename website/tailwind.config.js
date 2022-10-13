@@ -64,11 +64,12 @@ module.exports = {
         'app-color-400': '#FFFFFF',
         'app-color-500': '#EAF0EC',
       },
-      backgroundImage: () => ({
+      backgroundImage: {
         'header-desktop': "url('/images/bg-intro-desktop.svg')",
         'header-mobile': "url('/images/bg-intro-mobile.svg')",
         'image-mockups': "url('/images/image-mockups.png')",
-      }),
+        'navbar-image': "url('/images/navbar/Wholesale.jpg"
+      },
       backgroundSize: {
         'custom-mobile-header-size': '100% 50%',
         'custom-mobile-mockup-size': 'auto 60%',

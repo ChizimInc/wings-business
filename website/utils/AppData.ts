@@ -5,7 +5,7 @@ export const NavbarItems = [
     id: 1,
     title: 'About Us',
     link: '/about',
-    image: 'url("/assets/images/Main BG Photo.jpg")'
+    image: 'url("/assets/images/Our Projects Photo.jpg")'
   },
   {
     id: 2,
@@ -17,19 +17,19 @@ export const NavbarItems = [
     id: 3,
     title: 'Rolled metal products and equipment for agriculture',
     link: '/agriculture/rolled-metal',
-    image: 'url("/assets/images/Our Services Photo.jpg")'
+    image: 'url("/assets/images/navbar/Rolled.jpg")'
   },
   {
     id: 4,
     title: 'Trade in plants and trees',
     link: '/activities/lawn_improvement',
-    image: 'url("/assets/images/Our Greenhouse Photo.jpg")'
+    image: 'url("/assets/images/navbar/Trade.jpg")'
   },
   {
     id: 5,
     title: 'Wholesale Agricultural Products',
     link: '/products/purchase',
-    image: 'url("/assets/images/Our Projects Photo.jpg")'
+    image: 'url("/assets/images/navbar/Wholesale.jpg")'
   },
   {
     id: 6,

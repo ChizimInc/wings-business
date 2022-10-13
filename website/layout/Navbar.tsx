@@ -95,9 +95,10 @@ export default function Navbar() {
                         </div>
                       </div>
                       <div 
-                        className='absolute opacity-50 z-20 bg-app-color-100'
+                        className='absolute bg-cover bg-center z-20'
                         style={{
                           transition: '.5s',
+                          backgroundImage: item.image,
                           width: itemHandlerId == item.id ? '100%' : '0',
                           height: itemHandlerId == item.id ? '100%' : '0',
                         }}
